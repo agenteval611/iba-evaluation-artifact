@@ -1,0 +1,16 @@
+IBA authorization-path microbenchmark environment
+================================================
+python_version: 3.9.6
+python_implementation: CPython
+platform: macOS-26.5-arm64-arm-64bit
+operating_system: Darwin 25.5.0
+machine_architecture: arm64
+processor_identifier: arm
+benchmark_warmup_iterations: 50
+benchmark_batches: 5
+benchmark_repetitions_per_batch: 200
+timing_clock: time.perf_counter_ns
+reported_statistic: median per-call latency across timed batches
+scope: local Python PolicyEnforcementPoint.authorize path only
+portable_performance_claim: no
+note: timings are supplemental feasibility evidence and are hardware/runtime dependent

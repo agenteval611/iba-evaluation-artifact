@@ -1,0 +1,107 @@
+tools:
+  read_logs:
+    class: read_only
+    allowlisted: true
+    roles:
+    - analysis_agent
+    - execution_agent
+  summarize_logs:
+    class: read_only
+    allowlisted: true
+    roles:
+    - analysis_agent
+  create_ticket:
+    class: write
+    allowlisted: true
+    roles:
+    - ticket_agent
+    - execution_agent
+  deploy_fix:
+    class: approval_required
+    allowlisted: true
+    roles:
+    - execution_agent
+  rotate_secret:
+    class: admin_sensitive
+    allowlisted: false
+    roles:
+    - security_monitor_agent
+  disable_alerting:
+    class: admin_sensitive
+    allowlisted: false
+    roles:
+    - security_monitor_agent
+  search_docs:
+    class: read_only
+    allowlisted: true
+    roles:
+    - retrieval_agent
+  read_doc:
+    class: read_only
+    allowlisted: true
+    roles:
+    - retrieval_agent
+    - analysis_agent
+  summarize_doc:
+    class: read_only
+    allowlisted: true
+    roles:
+    - analysis_agent
+  export_doc:
+    class: admin_sensitive
+    allowlisted: true
+    roles:
+    - execution_agent
+  read_ticket:
+    class: read_only
+    allowlisted: true
+    roles:
+    - ticket_agent
+  classify_ticket:
+    class: read_only
+    allowlisted: true
+    roles:
+    - ticket_agent
+    - analysis_agent
+  comment_ticket:
+    class: write
+    allowlisted: true
+    roles:
+    - ticket_agent
+  route_ticket:
+    class: write
+    allowlisted: true
+    roles:
+    - ticket_agent
+  close_ticket:
+    class: admin_sensitive
+    allowlisted: true
+    roles:
+    - ticket_agent
+  change_user_permission:
+    class: admin_sensitive
+    allowlisted: false
+    roles:
+    - security_monitor_agent
+  prepare_proposal:
+    class: read_only
+    allowlisted: true
+    roles:
+    - approval_agent
+    - planner_agent
+  request_approval:
+    class: write
+    allowlisted: true
+    roles:
+    - approval_agent
+  check_approval:
+    class: read_only
+    allowlisted: true
+    roles:
+    - approval_agent
+    - execution_agent
+  execute_write_action:
+    class: approval_required
+    allowlisted: false
+    roles:
+    - execution_agent

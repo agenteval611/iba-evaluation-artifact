@@ -1,0 +1,8 @@
+Configuration,mean_latency_ms,overhead_vs_no_enforcement_ms
+No enforcement,0.000095,+0.000000
+Identity-only RBAC,0.003992,+0.003897
+Tool allowlist,0.004522,+0.004427
+Intent-only,0.008490,+0.008396
+Context-only,0.011578,+0.011483
+"Intent + context, no attenuation",0.014222,+0.014128
+Full IBA,0.025058,+0.024964

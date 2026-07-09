@@ -1,0 +1,26 @@
+Secondary LLM-generated request validation report
+=================================================
+study_role: secondary external-validity check; primary 5,040-record controlled study unchanged
+study_scope: model-generated action-resource request mediation; not a model-safety benchmark
+provenance_scope: trusted provenance is fixed harness channel metadata; causal provenance from mixed prompt context is not inferred
+model_id: gpt-5-mini-2025-08-07
+repetition_mode: three independent repetitions; no seed control requested or claimed
+generation_settings: {"incomplete_details": {}, "max_output_tokens": 300, "provider": "openai", "reasoning_effort": "minimal", "response_id": "resp_00d4577fc9cc942c006a4ee314b3a88197a124159e7fc61d5f", "retry_count": 0, "seed_control": false, "status": "completed", "temperature_parameter": "omitted_unsupported_by_selected_model", "usage": {"input_tokens": 376, "input_tokens_details": {"cache_write_tokens": 0, "cached_tokens": 0}, "output_tokens": 63, "output_tokens_details": {"reasoning_tokens": 0}, "total_tokens": 439}}
+attempted_runs: 120
+successful_generations: 120
+parsed_requests: 120
+unauthorized_proposals: 16
+GFR: 0/120 = 0.0%
+PFR: 0/120 = 0.0%
+MUPR: 16/120 = 13.3%
+UER_under_Full_IBA: 0/16 = 0.0%
+BAR: 48/48 = 100.0%
+BRSR: 48/60 = 80.0%
+generation_failure_retries: none
+api_schema_enforced_structured_outputs: no
+model_serialization: prompt-constrained and strictly parsed without repair
+model_claimed_provenance_trusted_by_PEP: no
+claimed_provenance_role: non-blocking analysis-only metadata; invalid enum values are recorded, not used for authorization
+constraint_interface: workflow-level canonical key/value schema exposed before generation
+model_outputs_manually_repaired: no
+malformed_outputs_fail_closed: yes

@@ -1,0 +1,64 @@
+IBA evaluation validation report
+================================
+total_rows: 5040
+surface_variants: ['variant_1', 'variant_2', 'variant_3']
+configurations: 7
+workflows: 4
+adversarial_attack_types: 6
+all configurations balanced: yes
+all workflows balanced: yes
+all attack types balanced: yes
+five explicit attack cases per workflow/category/variant: yes
+no missing required values: yes
+intent_match inconsistencies: 0
+Full IBA intent_match inconsistencies: 0
+provenance predicate inconsistencies: 0
+constraint predicate inconsistencies: 0
+delegated action-scope inconsistencies: 0
+Cartesian-product false intent allows: 0
+Full IBA decision-rule mismatches: 0
+Full IBA denial-reason mismatches: 0
+unauthorized_action_executed recomputation mismatches: 0
+Full IBA unauthorized executions outside overbroad_intent_extraction: 0
+target-count logic check: passed
+pair-scoped authority check: passed
+provenance predicate implementation check: passed
+signed context/replay check: passed
+measured latency/warm-up check: passed
+YAML consumption check: passed
+policy-label separation check: passed
+validation/audit independence check: passed
+paper metric consistency check: passed
+main Table 1 excludes latency: passed
+benchmark environment metadata check: passed
+supplemental latency artifact check: passed
+other validation errors: 0
+
+Secondary LLM-generated request validation
+------------------------------------------
+LLM validation study: RUN
+LLM model runs: 120
+LLM case definitions: 40
+LLM three-repetition balance check: passed
+LLM request-specific intent-scope check: passed
+LLM trusted/claimed provenance separation check: passed
+LLM constraint-schema consistency check: passed
+LLM claimed-provenance analytical-field check: passed
+LLM intent-predicate recomputation mismatches: 0
+LLM raw-output hash mismatches: 0
+LLM generation-status inconsistencies: 0
+LLM parse-failure execution inconsistencies: 0
+LLM Full IBA decision inconsistencies: 0
+LLM ground-truth recomputation mismatches: 0
+LLM unauthorized-execution recomputation mismatches: 0
+LLM benign-denial recomputation mismatches: 0
+LLM summary recomputation check: passed
+LLM Table 3 consistency check: passed
+GFR: 0/120 = 0.0%
+PFR: 0/120 = 0.0%
+MUPR: 16/120 = 13.3%
+UER: 0/16 = 0.0%
+BAR: 48/48 = 100.0%
+BRSR: 48/60 = 80.0%
+
+No validation errors found.

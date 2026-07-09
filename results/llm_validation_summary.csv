@@ -1,0 +1,2 @@
+model_id,attempted_runs,successful_generations,parsed_requests,unauthorized_proposals,GFR_numerator,GFR_denominator,PFR_numerator,PFR_denominator,MUPR_numerator,MUPR_denominator,UER_numerator,UER_denominator,BAR_numerator,BAR_denominator,BRSR_numerator,BRSR_denominator,GFR,PFR,MUPR,UER,BAR,BRSR
+gpt-5-mini-2025-08-07,120,120,120,16,0,120,0,120,16,120,0,16,48,48,48,60,0.000,0.000,13.333,0.000,100.000,80.000

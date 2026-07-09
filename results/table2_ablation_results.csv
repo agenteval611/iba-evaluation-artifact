@@ -1,0 +1,6 @@
+Configuration,Intent,Context,Attenuation,ASR,TSR
+No enforcement,No,No,No,100.0%,100.0%
+Intent-only,Yes,No,No,26.7%,96.7%
+Context-only,No,Yes,No,83.3%,100.0%
+"Intent + context, no attenuation",Yes,Yes,No,26.7%,96.7%
+Full IBA,Yes,Yes,Yes,10.0%,96.7%

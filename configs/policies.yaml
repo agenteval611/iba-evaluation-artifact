@@ -1,0 +1,32 @@
+policies:
+  no_enforcement:
+    label: No enforcement
+    checks: []
+  identity_only_rbac:
+    label: Identity-only RBAC
+    checks:
+    - identity
+  tool_allowlist:
+    label: Tool allowlist
+    checks:
+    - allowlist
+  intent_only:
+    label: Intent-only
+    checks:
+    - intent
+  context_only:
+    label: Context-only
+    checks:
+    - context
+  intent_context_no_attenuation:
+    label: Intent + context, no attenuation
+    checks:
+    - intent
+    - context
+  full_iba:
+    label: Full IBA
+    checks:
+    - credential
+    - context
+    - delegation
+    - intent

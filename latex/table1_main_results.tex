@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Main evaluation results across all workflow families.}
+\label{tab:main-results}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Configuration} & \textbf{ASR} & \textbf{TSR} & \textbf{FDR} & \textbf{DVR} \\
+\hline
+No enforcement & 100.0\% & 100.0\% & 0.0\% & 0.0\% \\
+Identity-only RBAC & 33.3\% & 100.0\% & 0.0\% & 0.0\% \\
+Tool allowlist & 47.5\% & 100.0\% & 0.0\% & 0.0\% \\
+Intent-only & 26.7\% & 96.7\% & 3.3\% & 0.0\% \\
+Context-only & 83.3\% & 100.0\% & 0.0\% & 0.0\% \\
+Intent + context, no attenuation & 26.7\% & 96.7\% & 3.3\% & 0.0\% \\
+Full IBA & 10.0\% & 96.7\% & 3.3\% & 16.7\% \\
+\hline
+\end{tabular}
+\end{table}

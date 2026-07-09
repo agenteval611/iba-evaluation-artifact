@@ -1,0 +1,13 @@
+# Paper-ready evaluation text
+
+## Section 7.1 Experimental Setup
+
+The evaluation uses a controlled authorization-level simulator rather than production traces or a deployed LLM-agent stack. Agent delegation and protected-tool requests are represented as mediated action records generated from YAML-defined workflow and attack cases. This design executes the same controlled task corpus under all seven enforcement configurations while isolating intent binding, context verification, and delegation attenuation. Attack labels are used only for scenario generation and result grouping; the policy enforcement point receives no attack, workflow, or task-type label. Authorization decisions depend on explicit action-resource scope membership, intent constraints, allowed provenance, credential verification, signed nonce-tagged context evidence, delegated action scope, and the active policy configuration. The corpus contains 5,040 execution rows across three deterministic surface-form variants, four workflow families, seven configurations, and six attack categories.
+
+## Section 7.6 Main Results
+
+Compared with the strongest partial-enforcement baseline, full IBA reduces ASR from 26.7% to 10.0% while maintaining TSR of 96.7%. Remaining Full IBA failures occur under overbroad intent extraction, where ambiguous remediation wording causes the extracted structured intent itself to include an operation or resource outside the effective user-authorized request. This is consistent with the enforcement boundary: IBA enforces the structured intent presented to the PEP but does not prove semantic intent extraction is perfect. In the evaluated corpus, Full IBA blocks mediated direct-prompt, indirect-prompt, tool-output-poisoning, context-spoofing, and delegation-drift cases under the stated threat-model assumptions. A supplemental local Python microbenchmark measures the authorization path with `time.perf_counter_ns()` after warm-up. Because these microsecond-scale timings are hardware- and runtime-dependent, we use them only as implementation-level feasibility evidence rather than as a portable primary performance estimate; they are reported in the artifact rather than the main results table.
+
+## Conclusion metric update
+
+In the controlled authorization-level evaluation, full IBA lowers attack success from 26.7% for the strongest partial-enforcement baseline to 10.0%, while preserving a benign task-success rate of 96.7%. The remaining successful in-scope unauthorized executions arise only in the overbroad-intent-extraction cases, underscoring that enforcement of a structured intent does not establish the semantic correctness of the extraction step itself.

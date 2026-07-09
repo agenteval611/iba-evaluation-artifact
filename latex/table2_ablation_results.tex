@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Ablation study of IBA components.}
+\label{tab:ablation-results}
+\begin{tabular}{lccccc}
+\hline
+\textbf{Configuration} & \textbf{Intent} & \textbf{Context} & \textbf{Attenuation} & \textbf{ASR} & \textbf{TSR} \\
+\hline
+No enforcement & No & No & No & 100.0\% & 100.0\% \\
+Intent-only & Yes & No & No & 26.7\% & 96.7\% \\
+Context-only & No & Yes & No & 83.3\% & 100.0\% \\
+Intent + context, no attenuation & Yes & Yes & No & 26.7\% & 96.7\% \\
+Full IBA & Yes & Yes & Yes & 10.0\% & 96.7\% \\
+\hline
+\end{tabular}
+\end{table}

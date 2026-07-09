@@ -1,0 +1,18 @@
+Independent semantic audit report
+=================================
+This report is computed from results/evaluation_results_all_seeds.csv only.
+The script imports only Python standard-library modules and does not import simulator decision logic.
+
+total_rows: 5040
+surface_variants: ['variant_1', 'variant_2', 'variant_3']
+intent_match inconsistencies: 0
+Full IBA intent_match inconsistencies: 0
+provenance predicate inconsistencies: 0
+constraint predicate inconsistencies: 0
+delegated action-scope inconsistencies: 0
+Full IBA decision-rule mismatches: 0
+Full IBA denial-reason mismatches: 0
+unauthorized_action_executed recomputation mismatches: 0
+Full IBA unauthorized executions: 36
+Full IBA unauthorized executions outside overbroad_intent_extraction: 0
+audit_status: PASS
