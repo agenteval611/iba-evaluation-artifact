@@ -1,6 +1,8 @@
-# IBA ICISS Evaluation Artifact
+# IBA Evaluation Artifact
 
-This artifact accompanies the paper **“Intent-Bound Authorization for LLM Agent Systems: Enforcing Delegation Safety with Context-Verified Credentials.”**
+Artifact and reference implementation for **“Intent-Bound Authorization for LLM Agent Systems: Enforcing Delegation Safety with Context-Verified Credentials,”** ICISS 2026.
+
+Author: Jay Goradia
 
 ## Evaluation model
 
